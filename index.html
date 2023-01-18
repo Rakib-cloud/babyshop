@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 
@@ -81,94 +82,51 @@
 </section>
 
 <!--navbar making-->
-<section>
-    <div>
-        <header>
-            <div class="header-content">
-                <input type="checkbox" id="hamburger" aria-label="menu button">
-                <label for="hamburger"><span></span></label>
+<header class="bg-white">
+    <nav class="flex justify-between items-center w-[92%]  mx-auto">
+        <div>
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[1vw]  gap-2">
+                <li>
+                    <a class="hover:text-gray-500" href="#">OUTLET</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">BUYPROTO</a>
+                </li>
 
-                <nav aria-label="main navigation">
-                    <ul class="menus1">
-                        <li class="outlet font-extrabold font12px">
-                            <a>OUTLET</a>
-                        </li>
-                        <li class="buyproto font-extrabold font12px"><a>BUYPROTO</a></li>
-                        <li class="font-extrabold font12px"><a>HOME</a></li>
-                        <li>
-                            <button
-                                    type="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="true"
-                                    aria-controls="dropdown1"
-                                    class="font-extrabold font12px"
-                            >
-                                CATEGORIES<span class="arrow"></span>
-                            </button>
-                            <ul class="dropdown1" id="dropdowdf">
-                                <li><a href="#">Shirt</a></li>
-                                <li><a href="#">Baby Dress</a></li>
-                                <li><a href="#">Pant</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <button
-                                    type="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="true"
-                                    aria-controls="dropdown1"
-                                    class="font-extrabold font12px"
-                            >
-                                PRODUCTS<span class="arrow"></span>
-                            </button>
-                            <ul class="dropdown1" id="ddff">
-                                <li><a href="#">Shirt</a></li>
-                                <li><a href="#">Baby Dress</a></li>
-                                <li><a href="#">Pant</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <button
-                                    type="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="true"
-                                    aria-controls="dropdown1"
-                                    class="font-extrabold font12px"
-                            >
-                                PAGES<span class="arrow"></span>
-                            </button>
-                            <ul class="dropdown1" id="fsdfds">
-                                <li><a href="#">Shirt</a></li>
-                                <li><a href="#">Baby Dress</a></li>
-                                <li><a href="#">Pant</a></li>
-                            </ul>
-                        </li>
+            </ul>
+        </div>
+        <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-2 md:z-1 sm:z-1">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
+                <li>
+                    <a class="hover:text-gray-500" href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">CATEGORIES</a>
 
-                        <li>
-                            <button
-                                    type="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="true"
-                                    aria-controls="dropdown1"
-                                    class="font-extrabold font12px"
-                            >
-                                FEATURES<span class="arrow"></span>
-                            </button>
-                            <ul class="dropdown1" id="fsd">
-                                <li><a href="#">Shirt</a></li>
-                                <li><a href="#">Baby Dress</a></li>
-                                <li><a href="#">Pant</a></li>
-                            </ul>
-                        </li>
-                        <li class="font-extrabold font12px"><a href="#">BLOG</a></li>
-                        <li class="searchlogo font-extrabold font12px "><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li class="ml-2 font-extrabold font12px"><a>SEARCH</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-</section>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">PRODUCTS</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">PAGES</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">FEATURES</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="#">BLOG</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+
+            <a class="hover:text-gray-500" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+             <a class="hover:text-gray-500" href="#">SEARCH</a>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden sm:block"></ion-icon>
+        </div>
+    </nav>
+</header>
 
 <!--navbar making end-->
 
@@ -233,78 +191,78 @@
 
 <!--welcome card start-->
 
-<!--<section class="bannercontainer">-->
-<!-- <div class="contentbanner">-->
-<!--     <h4>WELCOME To LITTLE PROTO'S WORLD</h4>-->
-<!--     <p>Enjoy the exceptional quality in all our products</p>-->
-<!-- </div>-->
+<section class="bannercontainer">
+ <div class="contentbanner">
+     <h4>WELCOME To LITTLE PROTO'S WORLD</h4>
+     <p>Enjoy the exceptional quality in all our products</p>
+ </div>
 
 
-<!--    <div class=" align-middle  container mx-auto  ">-->
-<!--        <div class="grid grid-cols-4 sm:grid-cols-1 sm:col-span-1 md:grid-cols-2 lg:grid-cols-4  text-left pb-6 gap-2 relative">-->
-<!--        &lt;!&ndash;        <div class="col-span-1 bg-gray-400">left</div>&ndash;&gt;-->
+    <div class=" align-middle  container mx-auto  ">
+        <div class="grid grid-cols-4 sm:grid-cols-1 sm:col-span-1 md:grid-cols-2 lg:grid-cols-4  text-left pb-6 gap-6 relative">
 
-<!--        <div class=" lg:col-span-2 sm:col-span-1 sm:row-span-1">-->
-<!--            <span class="font-bold">-->
-<!--                <img class="w-full gap-2" src="img/shop22_home_banner1.jpg" alt="">-->
-<!--            </span>-->
-<!--            <div class=" item1content pt-2">-->
-<!--              <h1>Discount upto 70%</h1>-->
-<!--                <p>View our Deals ></p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--            <div class="col-span-1 sm:col-span-1 extrapadding">-->
-<!--            <span class="font-bold  w-96">-->
-<!--                <img class="w-full" src="img/shop22_home_banner2.jpg" alt="">-->
-<!--            </span>-->
-<!--                <div class=" item2content   pt-2">-->
-<!--                    <h1>Summer Classics</h1>-->
-<!--                    <p>view our classics ></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">-->
-<!--            <span class="font-bold">-->
-<!--                <img class="w-full " src="img/shop22_home_banner3.jpg" alt="">-->
-<!--            </span>-->
-<!--                <div class=" pt-2">-->
-<!--                     <h1 class="item3content1">Monther and Daughter</h1>-->
-<!--                    <p class="itm3content2">View our Outfits</p>-->
 
-<!--                </div>-->
-<!--    </div>-->
+        <div class=" lg:col-span-2 sm:col-span-2 sm:row-span-2">
+            <span class="font-bold">
+                <img class="w-full gap-2" src="img/shop22_home_banner1.jpg" alt="">
+            </span>
+            <div class=" item1content pt-2">
+              <h1>Discount upto 70%</h1>
+                <p>View our Deals ></p>
+            </div>
+        </div>
+            <div class="col-span-1 sm:col-span-1 extrapadding">
+            <span class="font-bold  w-96">
+                <img class="w-full" src="img/shop22_home_banner2.jpg" alt="">
+            </span>
+                <div class=" item2content   pt-2">
+                    <h1>Summer Classics</h1>
+                    <p>view our classics ></p>
+                </div>
+            </div>
+            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">
+            <span class="font-bold">
+                <img class="w-full " src="img/shop22_home_banner3.jpg" alt="">
+            </span>
+                <div class=" pt-2">
+                     <h1 class="item3content1">Monther and Daughter</h1>
+                    <p class="itm3content2">View our Outfits</p>
 
-<!--            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">-->
-<!--            <span class="font-bold">-->
-<!--                <img class="w-full " src="img/shop22_home_banner4.jpg" alt="">-->
-<!--            </span>-->
-<!--                <div class=" item4content pt-2">-->
-<!--                    <h1>BABIES OUTFITS</h1>-->
-<!--                    <p>View our Outfits ></p>-->
+                </div>
+    </div>
 
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">-->
-<!--            <span class="font-bold">-->
-<!--                <img class="w-full " src="img/shop22_home_banner5.jpg" alt="">-->
-<!--            </span>-->
-<!--                <div class=" pt-2">-->
-<!--                    <h1 class="item5content1">BABIES DRESSES</h1>-->
-<!--                    <p class="item5content2">View our Dresses</p>-->
+            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">
+            <span class="font-bold">
+                <img class="w-full " src="img/shop22_home_banner4.jpg" alt="">
+            </span>
+                <div class=" item4content pt-2">
+                    <h1>BABIES OUTFITS</h1>
+                    <p>View our Outfits ></p>
 
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class=" lg:col-span-2 sm:col-span-1 sm:row-span-1">-->
-<!--            <span class="font-bold">-->
-<!--                <img class="w-full gap-2" src="img/shop22_home_banner6.jpg" alt="">-->
-<!--            </span>-->
-<!--                <div class="  pt-2">-->
-<!--                    <h1 class="item6content1">SHOES FOR BABIES</h1>-->
-<!--                    <p class="iem6content2">View our Deals > </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--    </div>-->
-<!--    </div>-->
-<!--</section>-->
+                </div>
+            </div>
+            <div class=" col-span-1 sm:col-span-1 sm:col-span-1">
+            <span class="font-bold">
+                <img class="w-full " src="img/shop22_home_banner5.jpg" alt="">
+            </span>
+                <div class=" pt-2">
+                    <h1 class="item5content1">BABIES DRESSES</h1>
+                    <p class="item5content2">View our Dresses</p>
+
+                </div>
+            </div>
+            <div class=" lg:col-span-2 sm:col-span-2 sm:row-span-2">
+            <span class="font-bold">
+                <img class="w-full gap-2" src="img/shop22_home_banner6.jpg" alt="">
+            </span>
+                <div class="  pt-2">
+                    <h1 class="item6content1">SHOES FOR BABIES</h1>
+                    <p class="iem6content2">View our Deals > </p>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
 
 <!--welcome card end-->
 

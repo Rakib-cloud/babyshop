@@ -31,6 +31,7 @@
         overflow:hidden;
         border: 1px solid white;
         margin-left: 15px;
+        z-index: 0;
 
 
     }
@@ -94,5 +95,126 @@
         right:10px;
 
     }
+
+
+    /*banner work*/
+
+    .bannercontainer{
+        margin-top: 10px;
+    }
+    .contentbanner{
+        text-align: center;
+
+    }
+    .contentbanner h4{
+        ffont-family: 'Oswald', sans-serif;
+
+        font-size: 10px;
+    }
+    .contentbanner p{
+
+        font-family: 'Indie Flower', cursive;
+        font-size: 10px;
+        color:lightgray;
+
+    }
+    .item1content{
+        position: absolute;
+        top:200px;
+        left:465px;
+    }
+    .item1content h1{
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .item1content p{
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+
+    }
+    .item2content{
+        position: absolute;
+        top:420px;
+        left:890px;
+
+
+    }
+    .item2content h1{
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+
+    }
+    .item2content p{
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+
+    }
+    .extrapadding{
+        padding-bottom: 10px;
+    }
+    .item3content1{
+        position: absolute;
+        top:40px;
+        left:1250px;
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .itm3content2{
+        position: absolute;
+        top:440px;
+        left:1270px;
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+    }
+    .item4content{
+        position: absolute;
+        top:540px;
+        left:90px;
+    }
+    .item4content h1{
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .item4content p{
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+    }
+    .item5content1{
+        position: absolute;
+        top:540px;
+        left:480px;
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .item5content2{
+        position: absolute;
+        top:980px;
+        left:480px;
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+    }
+    .item6content1{
+        position: absolute;
+        top:635px;
+        left:1000px;
+        font-size: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .iem6content2{
+        position: absolute;
+        top:950px;
+        left:1100px;
+        font-size: 10px;
+        font-family: 'Indie Flower', cursive;
+        border-bottom: 1px solid lightgray;
+    }
+
+
+
 
 }

@@ -88,220 +88,9 @@
 /*undertopnav work end*/
 
 /*navbar work*/
-header {
-    position: relative;
-    z-index: 999;
-    position: sticky;
-
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-around;
-    color: #212529;
-}
-
-
-
-label {
-    padding: 23px 20px;
-    position: absolute;
-    cursor: pointer;
-    right: 0;
-    top: 0;
-}
-
-input[type="checkbox"] {
-    opacity: 0;
-    position: absolute;
-    right: 0;
-}
-
-label span {
-    width: 20px;
-    height: 3px;
-    display: block;
-    background: #4f3e3e;
-    position: relative;
-}
-
-label span::after, label span::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: inherit;
-    width: inherit;
-    height: inherit;
-}
-
-label span::before{
-    top: 8px;
-}
-
-label span::after {
-    bottom: 8px;
-}
-
-label::before {
-    position: absolute;
-    content: "";
-    width: 58px;
-    height: 49px;
-    top: 0;
-    right: 0;
-}
-
-input[type="checkbox"]:focus + label::before {
-    box-shadow: 0 0 20px black;
-}
-
-ul {
-    background: #f2f2f2;
-}
-
-ul li {
-    list-style: none;
-    font-size: 14px;
-}
-
-ul li button {
-    font-size: inherit;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 100%;
-}
-
-ul li a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-}
-
-ul li a, ul li button {
-    padding: 0.7rem 1rem;
-    text-align: left;
-}
-.searchlogo{
-    margin-left: 700px;
-}
-.buyproto{
-margin-right: 250px;
-
-}
-.outlet{
-    margin-right: 8px;
-
-
-}
-.font12px{
+header a{
     font-size: 12px;
-}
-.menus1 {
-    position: absolute;
-    top: 3.2rem;
-    left: 0;
-    right: 0;
-    /*//display: flex;*/
-    /*  hide dropdown on small screens  */
-    visibility: hidden;
-
-    /*  smooth transitioning  */
-    transform: translateY(-1em);
-    transition: transform ease 0.2s;
-}
-
-/* toggle main dropdown */
-
-input[type="checkbox"]:checked ~ nav > ul {
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.dropdown1 {
-    padding: 2px 1.5rem;
-    height: 0;
-    overflow: hidden;
-    transition: height ease 0.2s;
-}
-
-li:focus-within .dropdown {
-    height: 135px;
-}
-
-.arrow {
-    width: 0.5em;
-    height: 0.5em;
-    display: inline-block;
-    vertical-align: middle;
-    border-left: 0.15em solid currentColor;
-    border-bottom: 0.15em solid currentColor;
-    transform: rotate(-45deg);
-    margin-left: 0.38em;
-    margin-top: -0.25em;
-    transition: transform 100ms ease-in-out;
-}
-
-li:focus-within > button > .arrow {
-    transform: rotate(-225deg);
-    margin-top: 4px;
-}
-
-/* MEDIA QUERIES  */
-@media (min-width: 640px) {
-
-    .header-content {
-        display: flex;
-
-    }
-
-    .menus1 {
-        position: absolute;
-        top: 3.2rem;
-        left: 0px;
-        right: 0px;
-        visibility: hidden;
-        /*display: flex;*/
-        /*display: block;*/
-        transform: translateY(-1em);
-        transition: transform ease 0.2s;
-    }
-
-    label, input[type="checkbox"] {
-        display: none;
-    }
-
-    ul li {
-        position: relative;
-        font-size: 14px;
-    }
-
-    ul li a:hover,
-    ul li button:hover {
-        background-color: #f2f2f2;
-    }
-
-    .dropdown1 {
-        position: absolute;
-        right: 0;
-        left: 0;
-        box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-        0 4px 6px -2px rgba(71, 63, 79, 0.16);
-        z-index: 99;
-        min-width: 10rem;
-        padding: 0;
-        background-color: black;
-        border-radius: 0 0 0.5rem 0.5rem;
-    }
-
-    ul li:hover .dropdown1 {
-        height: 135px;
-    }
-
-    ul li:hover > button > .arrow {
-        transform: rotate(-225deg);
-        margin-top: 4px;
-    }
+    font-weight: bold;
 }
 /*navbar work end*/
 
@@ -320,6 +109,7 @@ li:focus-within > button > .arrow {
 
     margin-left: 50px;
     margin-right:50px!important;
+
 
 }
 
@@ -404,9 +194,9 @@ li:focus-within > button > .arrow {
 
 }
 .contentbanner h4{
-    font-family: 'Permanent Marker', cursive;
+    ffont-family: 'Oswald', sans-serif;
 
-    font-size: 36px;
+    font-size: 24px;
 }
 .contentbanner p{
 
