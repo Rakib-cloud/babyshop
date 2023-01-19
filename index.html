@@ -39,7 +39,7 @@
         <div>
             <div class=" relative inline-block text-left dropdown cusmargin">
     <span class="rounded-md shadow-sm"
-    ><button class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+    ><button class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white  rounded-md hover:text-gray-500 "
              type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
         <span>USD</span>
         <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -96,13 +96,19 @@
             </ul>
         </div>
         <div
-                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-2 md:z-1 sm:z-1">
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[44vh] left-0 top-[-100%] md:w-auto  w-1/2 flex items-center px-2 md:z-1 navz">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
                 <li>
                     <a class="hover:text-gray-500" href="#">HOME</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500" href="#">CATEGORIES</a>
+                    <a class="hover:text-gray-500" href="#">CATEGORIES <span ><i class="fa-solid fa-arrows-down-to-line" onclick="showsub()" ></i></span></a>
+                         <ul class="submenuclass" >
+                             <li><a class="hover:text-gray-500" href="#">Mens</a></li>
+                             <li><a class="hover:text-gray-500" href="#">Mens</a></li>
+                             <li><a class="hover:text-gray-500" href="#">Mens</a></li>
+                         </ul>
+
 
                 </li>
                 <li>
@@ -123,7 +129,7 @@
 
             <a class="hover:text-gray-500" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
              <a class="hover:text-gray-500" href="#">SEARCH</a>
-            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden sm:block"></ion-icon>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-xl cursor-pointer md:hidden sm:block"></ion-icon>
         </div>
     </nav>
 </header>
@@ -202,7 +208,7 @@
         <div class="grid grid-cols-4 sm:grid-cols-1 sm:col-span-1 md:grid-cols-2 lg:grid-cols-4  text-left pb-6 gap-6 relative">
 
 
-        <div class=" lg:col-span-2 sm:col-span-2 sm:row-span-2">
+        <div class=" lg:col-span-2 sm:col-span-1 sm:row-span-1">
             <span class="font-bold">
                 <img class="w-full gap-2" src="img/shop22_home_banner1.jpg" alt="">
             </span>
@@ -251,7 +257,7 @@
 
                 </div>
             </div>
-            <div class=" lg:col-span-2 sm:col-span-2 sm:row-span-2">
+            <div class=" lg:col-span-2 sm:col-span-1 sm:row-span-1">
             <span class="font-bold">
                 <img class="w-full gap-2" src="img/shop22_home_banner6.jpg" alt="">
             </span>
@@ -270,383 +276,396 @@
 
 
 <!--feature section work start-->
-<!--<section class="featuredivmain">-->
-<!--    <div class="featurework">-->
-<!--        <div  class="flex featuredivline">-->
-<!--            <img src="ship.png" width="48px" height="48px">-->
-<!--            <div class="ml-3">-->
-<!--                <h5>FREE SHIPPING & RETURN</h5>-->
-<!--                <h4>Free Shipping on all orders over $99.</h4>-->
-<!--            </div>-->
-<!--        </div>-->
+<section class="featuredivmain">
+    <div class="featurework">
+        <div  class="flex featuredivline">
+            <img src="ship.png" width="48px" height="48px">
+            <div class="ml-3">
+                <h5>FREE SHIPPING & RETURN</h5>
+                <h4>Free Shipping on all orders over $99.</h4>
+            </div>
+        </div>
 
-<!--        <div class="flex featuredivline">-->
-<!--            <img src="icons8-money-bag-48.png">-->
-<!--            <div class="ml-3" >-->
-<!--                <h5>MONEY BACK GUARANTEE</h5>-->
-<!--                <h4>Free Shipping on all orders over $99.</h4>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="flex featuredivline">
+            <img src="icons8-money-bag-48.png">
+            <div class="ml-3" >
+                <h5>MONEY BACK GUARANTEE</h5>
+                <h4>Free Shipping on all orders over $99.</h4>
+            </div>
+        </div>
 
-<!--        <div class="flex">-->
-<!--            <img src="icons8-last-24-hours-24.png" width="48px" height="48px" >-->
-<!--            <div class="ml-3" >-->
-<!--                <h5>ONLINE SUPPORT 24/7</h5>-->
-<!--                <h4>We support our best for your service</h4>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="flex">
+            <img src="icons8-last-24-hours-24.png" width="48px" height="48px" >
+            <div class="ml-3 " >
+                <h5>ONLINE SUPPORT 24/7</h5>
+                <h4>We support our best for your service</h4>
+            </div>
+        </div>
 
-<!--    </div>-->
-<!--</section>-->
+    </div>
+</section>
 <!--feature section work end-->
 
 <!--cards under feature work-->
 
-<!--<section>-->
-<!--    <div class="simpleproduct">-->
-<!--&lt;!&ndash;        card1 design&ndash;&gt;-->
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount bg-red-200" >-20%</div>-->
-<!--            <img src="img/product-16_4.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Sport Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+<section>
+    <div class="simpleproduct">
+<!--        card1 design-->
+        <div class="prodiv">
+            <div class=" discount bg-red-200" >-20%</div>
+            <img src="img/product-16_4.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Sport Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--               <del> <p>$96.00</p></del>-->
-<!--                <p id="newprice">$68.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+               <del> <p>$96.00</p></del>
+                <p id="newprice">$68.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount bg-red-200" >-13%</div>-->
-<!--            <img src="img/shop23_product-4.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Summer Underclothes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount bg-red-200" >-13%</div>
+            <img src="img/shop23_product-4.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Summer Underclothes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$299.00</p></del>-->
-<!--                <p id="newprice">$259.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$299.00</p></del>
+                <p id="newprice">$259.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount bg-red-200" >-35%</div>-->
-<!--            <img src="img/product-11_3.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Blue Baby Winter Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount bg-red-200" >-35%</div>
+            <img src="img/product-11_3.jpg">
+            <div class="flex justify-between">
+                <h5>Blue Baby Winter Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$199.00</p></del>-->
-<!--                <p id="newprice">$129.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$199.00</p></del>
+                <p id="newprice">$129.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount bg-red-200" >-66%</div>-->
-<!--            <img src="img/product-10.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Blue Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount bg-red-200" >-66%</div>
+            <img src="img/product-10.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Blue Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$199.00</p></del>-->
-<!--                <p id="newprice">$68.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$199.00</p></del>
+                <p id="newprice">$68.00</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
 <!--cards under feature work end-->
 
 <!--hero section work start-->
-<!--<section class="herowork">-->
-<!-- <div class="heromainsection">-->
-<!--     <div class="herocontent">-->
-<!--         <div class="herocontent11">-->
-<!--             <h5 class="text-pink-400 customh5">Best Collections</h5>-->
-<!--             <p>Selected Products From Famous Brands</p>-->
-<!--         </div>-->
-<!--     </div>-->
-<!--     <div>-->
-<!--         <img src="img/shop22_cat1.jpg" class="heroimg">-->
-<!--     </div>-->
-<!--     <div>-->
-<!--         <img src="img/shop22_cat2.jpg" class="heroimg">-->
-<!--     </div>-->
-<!--     <div>-->
-<!--         <img src="img/shop22_cat3.jpg" class="heroimg">-->
-<!--     </div>-->
-<!-- </div>-->
+<section class="herowork">
+ <div class="heromainsection">
+     <div class="herocontent">
+         <div class="herocontent11">
+             <h5 class="text-pink-400 customh5">Best Collections</h5>
+             <p>Selected Products From Famous Brands</p>
+         </div>
+     </div>
+     <div>
+         <img src="img/shop22_cat1.jpg" class="heroimg">
+     </div>
+     <div>
+         <img src="img/shop22_cat2.jpg" class="heroimg">
+     </div>
+     <div>
+         <img src="img/shop22_cat3.jpg" class="heroimg">
+     </div>
+ </div>
 
-<!--</section>-->
+</section>
 
 <!--hero section work end-->
 
 <!--under hero card-->
-<!--<section>-->
-<!--    <div class="simpleproduct">-->
-<!--        &lt;!&ndash;        card1 design&ndash;&gt;-->
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount1 bg-red-200" >-20%</div>-->
-<!--            <img src="img/product-16_4.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Sport Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+<section>
+    <div class="flex tabdiv">
+        <div class="tab pos1">
+            <h4>BOYS</h4>
+        </div>
+        <div class="tab pos2">
+            <h4>BABIES</h4>
+        </div>
+        <div class="tab pos3">
+            <h4>GIRLS</h4>
+        </div>
+    </div>
+    <div class="simpleproduct">
+        <!--        card1 design-->
+        <div class="prodiv">
+            <div class=" discount1 bg-red-200" >-20%</div>
+            <img src="img/product-16_4.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Sport Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$96.00</p></del>-->
-<!--                <p id="newprice">$68.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$96.00</p></del>
+                <p id="newprice">$68.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount1 bg-red-200" >-13%</div>-->
-<!--            <img src="img/shop23_product-4.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Summer Underclothes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount1 bg-red-200" >-13%</div>
+            <img src="img/shop23_product-4.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Summer Underclothes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$299.00</p></del>-->
-<!--                <p id="newprice">$259.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$299.00</p></del>
+                <p id="newprice">$259.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount1 bg-red-200" >-35%</div>-->
-<!--            <img src="img/product-11_3.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Blue Baby Winter Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount1 bg-red-200" >-35%</div>
+            <img src="img/product-11_3.jpg">
+            <div class="flex justify-between">
+                <h5>Blue Baby Winter Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$199.00</p></del>-->
-<!--                <p id="newprice">$129.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$199.00</p></del>
+                <p id="newprice">$129.00</p>
+            </div>
+        </div>
 
-<!--        <div class="prodiv">-->
-<!--            <div class=" discount1 bg-red-200" >-66%</div>-->
-<!--            <img src="img/product-10.jpg">-->
-<!--            <div class="flex justify-between">-->
-<!--                <h5>Baby Blue Shoes</h5>-->
-<!--                <i class="fa-regular fa-heart"></i>-->
+        <div class="prodiv">
+            <div class=" discount1 bg-red-200" >-66%</div>
+            <img src="img/product-10.jpg">
+            <div class="flex justify-between">
+                <h5>Baby Blue Shoes</h5>
+                <i class="fa-regular fa-heart"></i>
 
-<!--            </div>-->
-<!--            <div class="starlogo">-->
-<!--                <span><i class="fa-regular fa-star "></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--                <span><i class="fa-regular fa-star"></i></span>-->
-<!--            </div>-->
-<!--            <div class="flex gap-3">-->
-<!--                <del> <p>$199.00</p></del>-->
-<!--                <p id="newprice">$68.00</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+            </div>
+            <div class="starlogo">
+                <span><i class="fa-regular fa-star "></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+                <span><i class="fa-regular fa-star"></i></span>
+            </div>
+            <div class="flex gap-3">
+                <del> <p>$199.00</p></del>
+                <p id="newprice">$68.00</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--under hero card end-->
-<!--<section class="brandigmain">-->
-<!--   <div class="branding">-->
-<!--       <div>-->
-<!--           <img src="img/shop21_brand2.png">-->
-<!--       </div>-->
-<!--       <div>-->
-<!--           <img src="img/shop21_brand1.png">-->
-<!--       </div>-->
-<!--       <div>-->
-<!--           <img src="img/shop21_brand3.png">-->
-<!--       </div>-->
-<!--       <div>-->
-<!--           <img src="img/shop21_brand4.png">-->
-<!--       </div>-->
-<!--       <div>-->
-<!--           <img src="img/shop21_brand5.png">-->
-<!--       </div>-->
-<!--   </div>-->
-<!--</section>-->
+<section class="brandigmain">
+   <div class="branding">
+       <div>
+           <img src="img/shop21_brand2.png">
+       </div>
+       <div>
+           <img src="img/shop21_brand1.png">
+       </div>
+       <div>
+           <img src="img/shop21_brand3.png">
+       </div>
+       <div>
+           <img src="img/shop21_brand4.png">
+       </div>
+       <div>
+           <img src="img/shop21_brand5.png">
+       </div>
+   </div>
+</section>
 
-<!--<section>-->
-<!--    <div class="footermaindiv">-->
-<!--&lt;!&ndash;        div1 work left&ndash;&gt;-->
-<!--        <div>-->
-<!--            <img src="img/reiro.svg" class="footimg">-->
-<!--            <div class="mt-3">-->
-<!--                <h4>ADDRESS:</h4>-->
-<!--                <h5>123 Street Name,City,England</h5>-->
-<!--            </div>-->
 
-<!--            <div class="mt-3">-->
-<!--                <h4>EMAIL:</h4>-->
-<!--                <h5>mail@example.com</h5>-->
-<!--            </div>-->
-<!--            <div class="flex gap-2 mt-3">-->
-<!--                <i class="fa-brands fa-facebook"></i>-->
-<!--                <i class="fa-brands fa-twitter"></i>-->
-<!--                <i class="fa-brands fa-linkedin-in"></i>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;        div1 work left end&ndash;&gt;-->
-<!--&lt;!&ndash;        div2 work start&ndash;&gt;-->
-<!--        <div class="footerdiv2">-->
-<!--            <div>-->
-<!--                <h4>PHONE</h4>-->
-<!--                <h5>Toll Free(123) 456-7890</h5>-->
-<!--            </div>-->
 
-<!--            <div class="footerdiv22">-->
-<!--                <h4>Working Days/Hours</h4>-->
-<!--                <h5>Mon-Sun /9.00AM-8.00PM</h5>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;        div2 work end&ndash;&gt;-->
-<!--&lt;!&ndash;        div3 start&ndash;&gt;-->
-<!--        <div>-->
-<!--            <h4>ACCOUNT</h4>-->
-<!--            <div>-->
-<!--                <a href="index.html">My Account</a>-->
-<!--                <a href="index.html">Track Your Order</a>-->
-<!--                <a href="index.html">Payment Methods</a>-->
-<!--                <a href="index.html">Shipping Guide</a>-->
-<!--                <a href="index.html">FAQs</a>-->
-<!--                <a href="index.html">Product Support</a>-->
-<!--                <a href="index.html">Privacy</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--&lt;!&ndash;        div3 end&ndash;&gt;-->
+<section>
+    <div class="footermaindiv">
+<!--        div1 work left-->
+        <div>
+            <img src="img/reiro.svg" class="footimg">
+            <div class="mt-3">
+                <h4>ADDRESS:</h4>
+                <h5>123 Street Name,City,England</h5>
+            </div>
 
-<!--&lt;!&ndash;        div4 start&ndash;&gt;-->
-<!--        <div>-->
+            <div class="mt-3">
+                <h4>EMAIL:</h4>
+                <h5>mail@example.com</h5>
+            </div>
+            <div class="flex gap-2 mt-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        <!--        div1 work left end-->
+<!--        div2 work start-->
+        <div class="footerdiv2">
+            <div>
+                <h4>PHONE</h4>
+                <h5>Toll Free(123) 456-7890</h5>
+            </div>
 
-<!--            <div class="footerdiv4">-->
-<!--                <a href="index.html">Order History</a>-->
-<!--                <a href="index.html">Advanced Search</a>-->
-<!--                <a href="index.html">Affillate Program</a>-->
+            <div class="footerdiv22">
+                <h4>Working Days/Hours</h4>
+                <h5>Mon-Sun /9.00AM-8.00PM</h5>
+            </div>
+        </div>
+        <!--        div2 work end-->
+<!--        div3 start-->
+        <div>
+            <h4>ACCOUNT</h4>
+            <div>
+                <a href="index.html">My Account</a>
+                <a href="index.html">Track Your Order</a>
+                <a href="index.html">Payment Methods</a>
+                <a href="index.html">Shipping Guide</a>
+                <a href="index.html">FAQs</a>
+                <a href="index.html">Product Support</a>
+                <a href="index.html">Privacy</a>
+            </div>
+        </div>
+<!--        div3 end-->
 
-<!--            </div>-->
-<!--        </div>-->
-<!--&lt;!&ndash;        div4 end&ndash;&gt;-->
+<!--        div4 start-->
+        <div>
 
-<!--&lt;!&ndash;        div5 start&ndash;&gt;-->
-<!--        <div>-->
-<!--            <h4>ABOUT</h4>-->
-<!--            <div>-->
-<!--                <a href="index.html">About Porto</a>-->
-<!--                <a href="index.html">Our Guarantees</a>-->
-<!--                <a href="index.html">Terms And Conditions</a>-->
-<!--                <a href="index.html">Privacy Policy</a>-->
-<!--                <a href="index.html">Return Policy</a>-->
-<!--                <a href="index.html">Intellectual Property Claims</a>-->
-<!--                <a href="index.html">Site Map</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--&lt;!&ndash;        div5 end&ndash;&gt;-->
+            <div class="footerdiv4">
+                <a href="index.html">Order History</a>
+                <a href="index.html">Advanced Search</a>
+                <a href="index.html">Affillate Program</a>
 
-<!--&lt;!&ndash;        div6 start&ndash;&gt;-->
-<!--        <div>-->
+            </div>
+        </div>
+<!--        div4 end-->
 
-<!--            <div class="footerdiv4">-->
-<!--                <a href="index.html">Site Index</a>-->
-<!--                <a href="index.html">Porto for the press</a>-->
-<!--                <a href="index.html">Business Account</a>-->
+<!--        div5 start-->
+        <div>
+            <h4>ABOUT</h4>
+            <div>
+                <a href="index.html">About Porto</a>
+                <a href="index.html">Our Guarantees</a>
+                <a href="index.html">Terms And Conditions</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="index.html">Return Policy</a>
+                <a href="index.html">Intellectual Property Claims</a>
+                <a href="index.html">Site Map</a>
+            </div>
+        </div>
+<!--        div5 end-->
 
-<!--            </div>-->
-<!--        </div>-->
-<!--&lt;!&ndash;        div6 end&ndash;&gt;-->
-<!--&lt;!&ndash;        div7 start&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div class=" w-70 ">-->
-<!--                <h4 >SUBSCRIBE NEWSLETTER</h4>-->
-<!--                <h5>Get all the latest information on events,sales and offers.<br>Signup for Newsletter</h5>-->
+<!--        div6 start-->
+        <div>
 
-<!--                <div class="flex" >-->
-<!--                <input type="text" placeholder="Enter Your Email"-->
-<!--                       class="input input-bordered border-solid bg-gray-300 w-70 h-10 mr-5"/>-->
+            <div class="footerdiv4">
+                <a href="index.html">Site Index</a>
+                <a href="index.html">Porto for the press</a>
+                <a href="index.html">Business Account</a>
 
-<!--                <button class=" bg-pink-100 text-white  py-2 px-6 ">Subscribe</button>-->
+            </div>
+        </div>
+<!--        div6 end-->
+<!--        div7 start-->
+        <div>
+            <div class=" w-90 ">
+                <h4 >SUBSCRIBE NEWSLETTER</h4>
+                <h5>Get all the latest information on events,sales and offers.<br>Signup for Newsletter</h5>
 
-<!--            </div>-->
-<!--        </div>-->
-<!--        </div>-->
-<!--&lt;!&ndash;        div7 end&ndash;&gt;-->
-<!--    </div>-->
+                <div class="flex" >
+                <input type="text" placeholder="Enter Your Email"
+                       class="input input-bordered border-solid bg-gray-300 w-100 h-8 "/>
 
-<!--    <div class="footerextra">-->
-<!--        <div>-->
-<!--            <h4><i class="fa-regular fa-copyright"></i> Porto Magento 2021.ALL Rights Reserved</h4>-->
-<!--        </div>-->
+                <button class=" bg-pink-100 text-white  py-1 px-6  mr-3">Subscribe</button>
 
-<!--        <div class="flex gap-2">-->
-<!--            <i class="fa-brands fa-cc-paypal"></i>-->
-<!--            <i class="fa-brands fa-cc-mastercard"></i>-->
-<!--            <i class="fa-brands fa-cc-visa"></i>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+            </div>
+        </div>
+        </div>
+<!--        div7 end-->
+    </div>
+
+    <div class="footerextra">
+        <div>
+            <h4><i class="fa-regular fa-copyright"></i> Porto Magento 2021.ALL Rights Reserved</h4>
+        </div>
+
+        <div class="flex gap-2">
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+        </div>
+    </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://kit.fontawesome.com/1eb2e44f8a.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>

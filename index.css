@@ -6,6 +6,9 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
+html,body{
+    overflow-x:hidden;
+}
 .h44{
     font-size: 13px;
 }
@@ -28,11 +31,11 @@
 #simg{
     margin-right: 8px;
 }
-.crossbutton{
-    margin-left: 680px;
-    margin-right: 5px;
-    color:gray;
-}
+/*.crossbutton{*/
+/*    margin-left: 680px;*/
+/*    margin-right: 5px;*/
+/*    color:gray;*/
+/*}*/
 
 /*under topnav css*/
 .undertopnavcontainer{
@@ -93,8 +96,12 @@ header a{
     font-weight: bold;
 }
 /*navbar work end*/
-
-
+.submenuclass{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: none;
+}
 /*sliderwork start*/
 
 #slider{
@@ -307,11 +314,10 @@ header a{
 }
 .featurework{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
+    justify-content: space-between;
+    margin-left: 248px;
     padding: 8px;
-    margin-right: auto;
+    margin-right: 184px;
     margin-top: -14px;
 }
 .featurework h5{
@@ -357,16 +363,18 @@ header a{
 .prodiv p{
     font-family: 'Padyakke Expanded One', cursive;
     color:lightgray;
+    font-size: 12px;
 }
 .prodiv #newprice{
     color:black;
 }
 .prodiv .starlogo{
     color:lightgray;
+    font-size: 10px;
 }
 .prodiv .discount{
     position: absolute;
-    top: 1945px;
+    top: 1868px;
     margin-left: 12px;
     width: 40px;
     height: 22px;
@@ -407,9 +415,42 @@ header a{
 }
 /*hero section work end*/
 /*under product into hero section*/
+.tabdiv{
+    position: relative;
+}
+.tab{
+    width: 185px;
+    height: 55px;
+    background-color: white;
+    color:black;
+
+
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;*/
+}
+.tab h4{
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+.pos1{
+position: absolute;
+    top:-35px;
+    left: 660px;
+
+}
+.pos2{
+    position: absolute;
+    top:-35px;
+    left: 1113px;
+}
+.pos3{
+    position: absolute;
+    top:-35px;
+    left: 1533px;
+}
 .discount1{
     position: absolute;
-    top: 2670px;
+    top: 2588px;
     margin-left: 12px;
     width: 40px;
     height: 22px;
@@ -459,14 +500,17 @@ header a{
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 13px;
     font-weight: 300;
+    color:gray;
 }
 .footermaindiv h4{
     font-size: 14px;
     font-weight: bold;
+
 }
 .footermaindiv h5{
     font-size: 12px;
     font-family: 'Shadows Into Light', cursive;
+    color:gray;
 }
 
 .footerdiv2{
@@ -484,9 +528,10 @@ header a{
     margin-left: 60px;
     margin-right: 60px;
     margin-top:15px;
+    color:gray;
 }
 /*footer work end*/
 
 
-/*responsive work for mobile device*/
+
 

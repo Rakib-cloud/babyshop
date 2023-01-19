@@ -45,3 +45,8 @@ function onToggleMenu(e){
     e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('top-[9%]')
 }
+function showsub () {
+    console.log('click');
+    var submenu = document.getElementsByClassName("submenuclass");
+    submenu.style.display = 'block';
+}
