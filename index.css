@@ -13,7 +13,27 @@ html,body{
     font-size: 13px;
 }
 /*topnav work start*/
+.section-padding{
+    padding: 3rem 0;
+}
 
+.hover-product{
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+    width: 32%;
+    background: white;
+    text-align: center;
+    padding: .7rem 1rem;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.main-product:hover .hover-product{
+    bottom: 5%;
+}
 .topnav{
     display: flex;
 
@@ -31,11 +51,7 @@ html,body{
 #simg{
     margin-right: 8px;
 }
-/*.crossbutton{*/
-/*    margin-left: 680px;*/
-/*    margin-right: 5px;*/
-/*    color:gray;*/
-/*}*/
+
 
 /*under topnav css*/
 .undertopnavcontainer{
@@ -96,12 +112,7 @@ header a{
     font-weight: bold;
 }
 /*navbar work end*/
-.submenuclass{
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    display: none;
-}
+
 /*sliderwork start*/
 
 #slider{
@@ -192,6 +203,16 @@ header a{
 
 /*sliderwork end*/
 
+
+
+
+
+
+
+
+
+
+
 /*banner work start*/
 .bannercontainer{
     margin-top: 10px;
@@ -214,8 +235,8 @@ header a{
 }
 .item1content{
     position: absolute;
-    top:200px;
-    left:465px;
+    top:40%;
+    left:60%;
 }
 .item1content h1{
     font-size: 26px;
@@ -223,14 +244,37 @@ header a{
 }
 .item1content p{
     font-size: 16px;
+
     font-family: 'Indie Flower', cursive;
-    border-bottom: 1px solid lightgray;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
 
 }
+.item1content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.item1content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 .item2content{
     position: absolute;
-    top:420px;
-    left:890px;
+    top:70%;
+    left:30%;
 
 
 }
@@ -241,32 +285,53 @@ header a{
 }
 .item2content p{
     font-size: 16px;
+
     font-family: 'Indie Flower', cursive;
-    border-bottom: 1px solid lightgray;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
 
 }
-.extrapadding{
-    padding-bottom: 10px;
+.item2content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
 }
+
+.item2content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 .item3content1{
     position: absolute;
-    top:40px;
-    left:1250px;
+    top:5%;
+    left:25%;
     font-size: 20px;
     font-family: 'Permanent Marker', cursive;
 }
 .itm3content2{
     position: absolute;
-    top:440px;
-    left:1270px;
+    bottom:8%;
+    left:28%;
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
     border-bottom: 1px solid lightgray;
 }
+
 .item4content{
     position: absolute;
-    top:540px;
-    left:90px;
+    top:8%;
+    left:18%;
 }
 .item4content h1{
     font-size: 20px;
@@ -274,40 +339,77 @@ header a{
 }
 .item4content p{
     font-size: 16px;
+
     font-family: 'Indie Flower', cursive;
-    border-bottom: 1px solid lightgray;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
+
+}
+.item4content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.item4content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 .item5content1{
     position: absolute;
-    top:540px;
-    left:480px;
+    top:8%;
+    left:28%;
     font-size: 20px;
     font-family: 'Permanent Marker', cursive;
 }
 .item5content2{
     position: absolute;
-    top:980px;
-    left:480px;
+    bottom:8%;
+    left:28%;
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
     border-bottom: 1px solid lightgray;
 }
+
 .item6content1{
     position: absolute;
-    top:635px;
-    left:1000px;
+    top:28%;
+    left:25%;
     font-size: 36px;
     font-family: 'Permanent Marker', cursive;
 }
+
+
 .iem6content2{
     position: absolute;
-    top:950px;
-    left:1100px;
+    top:80%;
+    left:35%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
     border-bottom: 1px solid lightgray;
 }
 /*banner work end*/
+
+
+
+
+
+
+
+
+
+
+
 /*feature section work start*/
 .featuredivmain{
     margin-top: 5px;
@@ -334,45 +436,34 @@ header a{
 
 /*feature section work end*/
 
+
+
+
+
+
+
+
 /*productsection work start*/
-.simpleproduct{
-    /*display: grid;*/
-    /*grid-template-columns: repeat(9,2fr);*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin:20px  auto;
-    /*//position: relative;*/
-    /*margin-left: 80px;*/
-    /*margin-right: 60px;*/
-}
-.prodiv{
-    padding: 0;
-    margin: 0;
-    width: 200px;
-    height: 150px;
-}
-.prodiv img{
-    width: 100%;
-}
-.prodiv h5{
+
+
+
+.productdiv h5{
     font-family: 'Padyakke Expanded One', cursive;
     font-size: 12px;
 }
-.prodiv p{
+.productdiv p{
     font-family: 'Padyakke Expanded One', cursive;
     color:lightgray;
     font-size: 12px;
 }
-.prodiv #newprice{
+.productdiv #newprice{
     color:black;
 }
-.prodiv .starlogo{
+.productdiv .starlogo{
     color:lightgray;
     font-size: 10px;
 }
-.prodiv .discount{
+.productdiv .discount{
     position: absolute;
     top: 1868px;
     margin-left: 12px;
@@ -383,6 +474,12 @@ header a{
 
 }
 /*productsection work end*/
+
+
+
+
+
+
 
 
 
@@ -409,55 +506,38 @@ header a{
 .herocontent11{
     margin-top: 130px;
 }
- .customh5{
+.customh5{
     font-size: 36px;
-     font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', cursive;
 }
 /*hero section work end*/
-/*under product into hero section*/
-.tabdiv{
-    position: relative;
-}
-.tab{
-    width: 185px;
-    height: 55px;
-    background-color: white;
-    color:black;
 
-
-    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;*/
-}
-.tab h4{
-    font-size: 20px;
-    font-family: 'Rock Salt', cursive;
-    text-align: center;
-}
-.pos1{
-position: absolute;
-    top:-35px;
-    left: 660px;
-
-}
-.pos2{
+/*product2section*/
+.discount1 {
     position: absolute;
-    top:-35px;
-    left: 1113px;
-}
-.pos3{
-    position: absolute;
-    top:-35px;
-    left: 1533px;
-}
-.discount1{
-    position: absolute;
-    top: 2588px;
-    margin-left: 12px;
+    top: 14px;
     width: 40px;
     height: 22px;
     font-family: 'Explora', cursive;
-
-
+    left: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*branding work start*/
 .brandigmain{
     border-bottom: 1px solid lightgray;
@@ -481,6 +561,17 @@ position: absolute;
 
 }
 /*branding work end*/
+
+
+
+
+
+
+
+
+
+
+
 /*footer work start*/
 .footimg{
     width: 70px;
