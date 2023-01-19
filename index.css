@@ -214,6 +214,9 @@ header a{
 
 
 /*banner work start*/
+.newpadding{
+    padding:40px;
+}
 .bannercontainer{
     margin-top: 10px;
 }
@@ -255,9 +258,9 @@ header a{
 .item1content p::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 4px;
-    border-radius: 4px;
+    border-radius: 1px;
     background-color: #18272F;
     bottom: 0;
     left: 0;
