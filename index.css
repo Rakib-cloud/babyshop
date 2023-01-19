@@ -141,6 +141,8 @@ header a{
 }
 .slide img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .ss-content{
@@ -214,14 +216,13 @@ header a{
 
 
 /*banner work start*/
-.newpadding{
-    padding:40px;
-}
+
 .bannercontainer{
     margin-top: 10px;
 }
 .contentbanner{
     text-align: center;
+    padding:5rem;
 
 }
 .contentbanner h4{
